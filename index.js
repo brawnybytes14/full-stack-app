@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 // connect mongodb
-const url = "mongodb://localhost:27017/ecommerce"
+const url = "mongodb://127.0.0.1:27017/ecommerce";
 mongoose.connect(url)
   .then(res => console.log("db connected..."))
   .catch(err => console.log(err))
